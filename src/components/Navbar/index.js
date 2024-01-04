@@ -4,7 +4,7 @@ import styled, { useTheme } from 'styled-components'
 
 const Nav = styled.div`
     background-color: ${({theme}) => theme.bg};
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +49,7 @@ const NavItems = styled.ul`
     gap: 32px;
     padding: 0 6px;
     list-style: none;
+    font-size: 18px;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -83,7 +84,7 @@ const ButtonContainer = styled.div`
 `;
 
 const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
@@ -93,9 +94,9 @@ const GitHubButton = styled.a`
   background-color: transparent;
   cursor: pointer;
   padding: 0 20px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: all 0.2s ease-in-out;
   &:hover {
     background-color: ${({ theme }) => theme.primary};
@@ -181,7 +182,7 @@ const Navbar = () => {
           <FaBars onClick={() => setOpen(!open)} /> {/* Correct the placement */}
         </CollapseIcon>
         <NavItems>
-          <NavLink href='#about'>About</NavLink>
+          <NavLink href='#home'>Home</NavLink>
           <NavLink href='#skills'>Skills</NavLink>
           <NavLink href='#education'>Education</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
@@ -196,12 +197,12 @@ const Navbar = () => {
         open && (
           <CollapseMenu open={open}>
             <CollapseMenuLink
-              href='#about'
+              href='#home'
               onClick={() => {
                 setOpen(!open);
               }}
             >
-              About
+              Home
             </CollapseMenuLink>
             <CollapseMenuLink
               href='#skills'

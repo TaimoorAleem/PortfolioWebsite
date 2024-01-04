@@ -1,12 +1,11 @@
 export const Bio = {
-    name: "Muhammad Taimoor Aleem",
+    name: "Taimoor Aleem",
     roles: [
-      "Full Stack Developer",
-      "Software Engineer",
-      "Data Scientist",
-      "Machine Learning Enthusiast",
+      "Full Stack Developer.",
+      "Software Engineer.",
+      "Data Scientist.",
+      "Machine Learning Enthusiast.",
     ],
-    description: "Welcome to my Portfolio Website!",
     github: "https://github.com/taimooraleem",
     resume: "https://drive.google.com/file/d/1pgxFR1rY32CEkoX35_GT64rMzWPJ-PAK/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/taimooraleem/",
