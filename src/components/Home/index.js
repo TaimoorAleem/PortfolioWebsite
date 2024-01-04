@@ -60,9 +60,10 @@ export const HomeInnerContainer = styled.div`
 export const HomeLeftContainer = styled.div`
   width: 100%;
   order: 1;
+  margin-bottom: 100px;
   @media (max-width: 960px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +71,7 @@ export const HomeLeftContainer = styled.div`
 
   @media (max-width: 640px) {
     order: 2;
-    margin-bottom: 30px;
+    margin-bottom: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,15 +84,16 @@ export const HomeRightContainer = styled.div`
   order: 2;
   justify-content: end;
   gap: 12px;
+  margin-bottom: 100px;
   @media (max-width: 960px) {
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 130px;
   }
 `;
 
@@ -179,21 +181,19 @@ const HomeButton = styled.a`
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    width: 95%;
-    max-width: 225px;
     text-align: center;
-    padding: 16px 0;
+    padding: 12px 24px;
     margin-top: 20px;
     color: ${({ theme }) => theme.white};
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 400;
     transition: all 0.2s ease-in-out !important;
     background: transparent;
     border: 2px solid #64ffda;
-    box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.1),
-                -10px -10px 30px rgba(100, 255, 218, 0.1);
+    box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.075),
+                -10px -10px 30px rgba(100, 255, 218, 0.075);
     transform-origin: center;
     &:hover {
         background: linear-gradient(225deg, #64ffda 0%, #64a4ff 100%);
@@ -208,8 +208,12 @@ const HomeButton = styled.a`
     }
 `;
 
-
-
+const ButtonWrapper = styled.div`
+    @media (min-width: 960px) {
+      display: flex;
+      gap: 20px;  
+    }
+`;
 
 const Home = () => {
   return (
@@ -220,7 +224,7 @@ const Home = () => {
               </HomeBg>
               <HomeInnerContainer>
                   <HomeLeftContainer id="Left">
-                      <Subtitle>Hi, my name is<br /> </Subtitle>
+                      <Subtitle>Hello, my name is<br /> </Subtitle>
                       <Title>{Bio.name}</Title>
                       <TextLoop>
                           I am a
@@ -234,8 +238,11 @@ const Home = () => {
                               />
                           </Span>
                       </TextLoop>
-                      <HomeButton href={Bio.resume} target='display'>View Resume</HomeButton>
-                      <HomeButton href='#contact' target='display'>Contact Me</HomeButton>
+                      <ButtonWrapper>
+                        <HomeButton href={Bio.resume} target='display'>View Resume</HomeButton>
+                        <HomeButton href='#contact' target='display'>Contact Me</HomeButton>
+                      </ButtonWrapper>
+                      
                   </HomeLeftContainer>
 
                   <HomeRightContainer id="Right">

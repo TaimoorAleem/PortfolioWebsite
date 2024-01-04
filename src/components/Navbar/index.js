@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Icon } from '@iconify/react';
 import styled, { useTheme } from 'styled-components'
 
 const Nav = styled.div`
@@ -46,7 +48,7 @@ const NavItems = styled.ul`
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 32px;
+    gap: 48px;
     padding: 0 6px;
     list-style: none;
     font-size: 18px;
@@ -58,16 +60,12 @@ const NavItems = styled.ul`
 
 const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    :hover {
+    &:hover {
       color: ${({ theme }) => theme.primary};
-    }
-
-    &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
     }
 `;
 
@@ -83,28 +81,29 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GitHubButton = styled.a`
-  border: 2px solid ${({ theme }) => theme.primary};
+const NavIcon = styled.a`
+  
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
   background-color: transparent;
   cursor: pointer;
-  padding: 0 20px;
   font-weight: 300;
   text-decoration: none;
-  font-size: 18px;
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.primary};
   }
   @media screen and (max-width: 768px) { 
   font-size: 14px;
   }
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  gap: 24px;
 `;
 
 const CollapseIcon = styled.div`
@@ -177,20 +176,61 @@ const Navbar = () => {
   return (
     <Nav>
       <NavContainer>
-        <NavLogo>Home</NavLogo>
+        <NavLogo></NavLogo>
         <CollapseIcon>
-          <FaBars onClick={() => setOpen(!open)} /> {/* Correct the placement */}
+          <FaBars onClick={() => setOpen(!open)} />
         </CollapseIcon>
         <NavItems>
           <NavLink href='#home'>Home</NavLink>
           <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href='#qualifications'>Qualifications</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href='https://github.com/TaimoorAleem' target='_blank'>
-            Github Profile
-          </GitHubButton>
+          <ButtonWrapper>
+            <NavIcon
+              style={{
+                padding: "24px 0px",
+                textAlign: "center",
+                width: "max-content",
+                margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              href='https://github.com/TaimoorAleem'
+              target='_blank'
+            >
+                <FaGithub style={{ fontSize: '24px' }} />
+            </NavIcon>
+            <NavIcon
+              style={{
+                padding: "24px 0px",
+                textAlign: "center",
+                width: "max-content",
+                margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              href='https://www.linkedin.com/in/taimooraleem/'
+              target='_blank'
+            >
+              <FaLinkedin style={{ fontSize: '24px' }} />
+            </NavIcon>
+            <NavIcon
+              style={{
+                padding: "24px 0px",
+                textAlign: "center",
+                width: "max-content",
+                margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              href='https://devpost.com/taimooraleem'
+              target='_blank'
+            >
+              <Icon icon="simple-icons:devpost" style={{ fontSize: '24px' }} />  
+            </NavIcon>
+          </ButtonWrapper>
         </ButtonContainer>
       </NavContainer>
       {
@@ -213,12 +253,12 @@ const Navbar = () => {
               Skills
             </CollapseMenuLink>
             <CollapseMenuLink
-              href='#education'
+              href='#qualifications'
               onClick={() => {
                 setOpen(!open);
               }}
             >
-              Education
+              Qualifications
             </CollapseMenuLink>
             <CollapseMenuLink
               href='#projects'
@@ -228,20 +268,34 @@ const Navbar = () => {
             >
               Projects
             </CollapseMenuLink>
-            <GitHubButton
+            <NavIcon
               style={{
-                padding: "10px 16px",
-                background: theme.primary,
-                color: theme.white,
+                padding: "10px 0px",
                 textAlign: "center",
                 width: "max-content",
                 margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
               }}
               href='https://github.com/TaimoorAleem'
               target='_blank'
             >
-              Github Profile
-            </GitHubButton>
+                <FaGithub style={{ fontSize: '24px' }} />
+            </NavIcon>
+            <NavIcon
+              style={{
+                padding: "10px 0px",
+                textAlign: "center",
+                width: "max-content",
+                margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              href='https://github.com/TaimoorAleem'
+              target='_blank'
+            >
+              <FaLinkedin style={{ fontSize: '24px' }} />
+            </NavIcon>
           </CollapseMenu>
       )}
     </Nav>
