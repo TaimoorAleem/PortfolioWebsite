@@ -219,16 +219,15 @@ const HomeButton = styled.a`
     }
 
     @media (max-width: 640px) {
-        padding: 12px 0;
+        padding: 12px 24px;
         font-size: 18px;
     }
 `;
 
 const ButtonWrapper = styled.div`
-    @media (min-width: 960px) {
-      display: flex;
-      gap: 20px;  
-    }
+    
+    display: flex;
+    gap: 20px;  
 `;
 
 const Home = () => {
