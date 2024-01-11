@@ -14,11 +14,6 @@ const Body = styled.div`
   overflow-x: hidden;
 `;
 
-const Wrapper = styled.div`
-  background: linear-gradient(38.73deg, rgba(0, 50, 65, 0.15) 0%, rgba(0, 255, 255, 0) 50%), linear-gradient(141.27deg, rgba(0, 50, 65, 0) 50%, rgba(0, 50, 65, 0.15) 100%);
-  width: 100%;
-`;
-
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -26,11 +21,9 @@ function App() {
         <Navbar />
         <Body>
           <Home />
-          <Wrapper>
             <Skills />
             <Education />
             <Projects />
-          </Wrapper>
         </Body>
       </Router>
     </ThemeProvider>
