@@ -26,8 +26,8 @@ const Card = styled.div`
     width: 650px;
     border-radius: 10px;
     border: 0.1px solid ${({ theme }) => theme.primary};
-    box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.075),
-                -10px -10px 30px rgba(100, 255, 218, 0.075);    
+    box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.05),
+                -10px -10px 30px rgba(100, 255, 218, 0.05); 
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
@@ -61,7 +61,8 @@ const Top = styled.div`
 `
 
 const Image = styled.img`
-    height: 50px;
+    height: 60px;
+    width: 60px;
     background-color: #000;
     border-radius: 10px;
     margin-top: 4px;
@@ -104,18 +105,6 @@ const Date = styled.div`
     }
 `
 
-const Grade = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 2px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-
-
 const EducationCard = ({ education }) => {
     return (
         <Card>
@@ -125,7 +114,6 @@ const EducationCard = ({ education }) => {
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
                     <Date>{education.date}</Date>
-                    <Grade>{education.grade}</Grade>
                 </Body>
             </Top>
         </Card>

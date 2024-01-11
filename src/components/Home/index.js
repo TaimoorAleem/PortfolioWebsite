@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import HomeBgAnimation from '../HomeBgAnimation';
 import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
-import HomeImg from '../../images/TaimoorPic.jpg'
+import HomeImg from '../../images/taimoor.jpg'
 
 export const HomeContainer = styled.div`
   background: ${({ theme }) => theme.Bg};
@@ -15,7 +14,7 @@ export const HomeContainer = styled.div`
     padding: 66px 16px;
   }
   @media (max-width: 640) {
-    padding: 32px 16px;
+    padding: 12px 6px;
   }
   z-index: 1;
 `;
@@ -47,7 +46,6 @@ export const HomeBg = styled.div`
 export const HomeInnerContainer = styled.div`
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1100px;
@@ -71,10 +69,11 @@ export const HomeLeftContainer = styled.div`
 
   @media (max-width: 640px) {
     order: 2;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
   }
 `;
 
@@ -89,11 +88,11 @@ export const HomeRightContainer = styled.div`
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 180px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 130px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -106,6 +105,8 @@ const Img = styled.img`
   margin-right: 25px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
+  box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.075),
+                -10px -10px 30px rgba(100, 255, 218, 0.075);
 
   @media (max-width: 768px) {
     max-width: 350;
@@ -134,6 +135,11 @@ line-height: 68px;
   line-height: 48px;
   margin-bottom: 8px;
 }
+@media (max-width: 360px) {
+  font-size: 20px;
+  line-height: 48px;
+  margin-bottom: 8px;
+}
 `;
 
 const Title = styled.div`
@@ -152,6 +158,11 @@ const Title = styled.div`
     line-height: 48px;
     margin-bottom: 8px;
   }
+  @media (max-width: 360px) {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
 `;
 
 const TextLoop = styled.div`
@@ -166,6 +177,11 @@ const TextLoop = styled.div`
   }
   @media (max-width: 640px) {
     font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 360px) {
+    font-size: 16px;
     line-height: 48px;
     margin-bottom: 16px;
   }
@@ -219,9 +235,6 @@ const Home = () => {
   return (
       <div id="home">
           <HomeContainer>
-              <HomeBg>
-                  <HomeBgAnimation />
-              </HomeBg>
               <HomeInnerContainer>
                   <HomeLeftContainer id="Left">
                       <Subtitle>Hello, my name is<br /> </Subtitle>
@@ -240,14 +253,12 @@ const Home = () => {
                       </TextLoop>
                       <ButtonWrapper>
                         <HomeButton href={Bio.resume} target='display'>View Resume</HomeButton>
-                        <HomeButton href='#contact' target='display'>Contact Me</HomeButton>
+                        <HomeButton href='mailto:taimooraleem01@gmail.com' target='display'>Contact Me</HomeButton>
                       </ButtonWrapper>
                       
                   </HomeLeftContainer>
-
                   <HomeRightContainer id="Right">
-
-                      <Img src={HomeImg} alt="Home-image" />
+                    <Img src={HomeImg} alt="Home-image" />
                   </HomeRightContainer>
               </HomeInnerContainer>
 

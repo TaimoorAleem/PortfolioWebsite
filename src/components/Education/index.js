@@ -60,8 +60,13 @@ const TimelineSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    .MuiTimelineItem-root::before {
+        content: none;
+    }
+
     @media (max-width: 660px) {
-        align-items: end;
+        align-items: center;
     }
 `;
 
@@ -75,7 +80,7 @@ const theme = createTheme({
 
 const index = () => {
     return (
-        <Container id="education">
+        <Container id="qualifications">
             <Wrapper>
                 <Title>Education</Title>
                 <TimelineSection>

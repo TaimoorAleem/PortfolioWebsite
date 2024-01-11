@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as ScrollLink } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Icon } from '@iconify/react';
@@ -58,15 +59,16 @@ const NavItems = styled.ul`
     }
 `;
 
-const NavLink = styled.a`
-    color: ${({ theme }) => theme.text_primary};
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    &:hover {
-      color: ${({ theme }) => theme.primary};
-    }
+const NavLink = styled(ScrollLink)`
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -92,7 +94,7 @@ const NavIcon = styled.a`
   cursor: pointer;
   font-weight: 300;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
@@ -130,11 +132,11 @@ const CollapseMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.bg+99};
     transition: all 0.6s ease-in-out;
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     opacity: ${({ open }) => (open ? '100%' : '0')};
     z-index: ${({ open }) => (open ? '1000' : '-1000')};
 
@@ -157,18 +159,6 @@ const CollapseMenuLink = styled.a`
   }
 `;
 
-const CollapseNavLogo = styled.a`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
-  }
-`;
-
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
@@ -181,10 +171,42 @@ const Navbar = () => {
           <FaBars onClick={() => setOpen(!open)} />
         </CollapseIcon>
         <NavItems>
-          <NavLink href='#home'>Home</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#qualifications'>Qualifications</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
+        <NavLink
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          to="qualifications"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+        >
+          Qualifications
+        </NavLink>
+        <NavLink
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+        >
+          Projects
+        </NavLink>
         </NavItems>
         <ButtonContainer>
           <ButtonWrapper>
@@ -295,6 +317,20 @@ const Navbar = () => {
               target='_blank'
             >
               <FaLinkedin style={{ fontSize: '24px' }} />
+            </NavIcon>
+            <NavIcon
+              style={{
+                padding: "24px 0px",
+                textAlign: "center",
+                width: "max-content",
+                margin: "0 auto",
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              href='https://devpost.com/taimooraleem'
+              target='_blank'
+            >
+              <Icon icon="simple-icons:devpost" style={{ fontSize: '24px' }} />  
             </NavIcon>
           </CollapseMenu>
       )}

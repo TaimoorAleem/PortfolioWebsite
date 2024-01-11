@@ -9,7 +9,7 @@
 }
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
 }
 
 body{
@@ -20,7 +20,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 10px;
     height: 80px;
   }
   

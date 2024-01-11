@@ -3,38 +3,38 @@ import styled from 'styled-components'
 import { skills } from '../../data/constants'
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
 `
 
 const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1100px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+      flex-direction: column;
+  }
 `
 
 const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.white};
-  @media (max-width: 768px) {
-margin-top: 12px;
-      font-size: 32px;
-  }
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+    color: ${({ theme }) => theme.white};
+    @media (max-width: 768px) {
+  margin-top: 12px;
+        font-size: 32px;
+    }
 `;
 
 const SkillsContainer = styled.div`
@@ -51,8 +51,8 @@ const Skill = styled.div`
   max-width: 500px;
   background: ${({ theme }) => theme.Bg};
   border: 0.1px solid ${({ theme }) => theme.primary};
-  box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.075),
-                -10px -10px 30px rgba(100, 255, 218, 0.075);
+  box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.05),
+                -10px -10px 30px rgba(100, 255, 218, 0.05);
   border-radius: 16px;
   padding: 18px 36px;
   @media (max-width: 768px) {
@@ -88,6 +88,7 @@ const SkillItem = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.white};
   border: 1px solid ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.bg};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -105,8 +106,8 @@ const SkillItem = styled.div`
 `
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
 `
 
 
