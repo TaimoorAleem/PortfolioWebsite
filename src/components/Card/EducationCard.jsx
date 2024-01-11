@@ -25,6 +25,7 @@ text-overflow: ellipsis;
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
+    border: 0.1px solid ${({ theme }) => theme.primary};
     box-shadow: 10px 10px 30px rgba(100, 255, 218, 0.075),
                 -10px -10px 30px rgba(100, 255, 218, 0.075);    
     padding: 12px 16px;
@@ -51,7 +52,6 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid ${({ theme }) => theme.primary};
 `
 
 const Top = styled.div`
