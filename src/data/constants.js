@@ -160,7 +160,7 @@ export const Bio = {
           image: require('../images/jupyter.png'),
         },
         {
-          name: "postman",
+          name: "Postman",
           image: require('../images/postman.png'),
         },
         {
@@ -237,19 +237,20 @@ export const Bio = {
     },
     {
       id: 2,
-      title: "Rock Paper Scissors Game",
-      date: "Jan 2023 - Apr 2023",
+      title: "Portfolio Website",
+      date: "Dec 2023 - Jan 2024",
       description:
-        "An interactive web application that allows users to play a simple game of Rock Paper Scissors with the computer.",
+        "A personal portfolio website created using React JS and Material UI to showcase my skills and projects.",
       image:
-        "",
+        require('../images/portfolio.JPG'),
       tags: [
-        "Java",
-        "Spring Boot",
-        "H2 Database Engine",
+        "ReactJS",
+        "NodeJS",
+        "Material UI",
+        "CSS Styled Components",
       ],
       category: "web",
-      link: ""
+      link: "https://taimooraleem.com"
     },
     {
       id: 3,
@@ -277,7 +278,7 @@ export const Bio = {
       tags: [
         "MongoDB",
         "ExpressJS",
-        "React.js",
+        "ReactJS",
         "NodeJS",
         "MaterialUI",
       ],
