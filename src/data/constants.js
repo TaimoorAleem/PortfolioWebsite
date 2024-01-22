@@ -28,12 +28,16 @@ export const Bio = {
           image: require('../images/javascript.png'),
         },
         {
-          name: "React Js",
+          name: "React.js",
           image: require('../images/react.png'),
         },
         {
           name: "Angular",
           image: require('../images/angular.png'),
+        },
+        {
+          name: "Next.js",
+          image: require('../images/nextjs.png'),
         },
         {
           name: "Bootstrap",
@@ -49,17 +53,16 @@ export const Bio = {
       title: "Backend",
       skills: [
         {
-          name: "Node Js",
+          name: "Node.js",
           image: require('../images/node.png'),
         },
         {
-          name: "Express Js",
+          name: "Express.js",
           image: require('../images/express.png'),
         },
         {
           name: "MongoDB",
-          image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          image: require('../images/mongodb.png'),
         },
         {
           name: "C#",
@@ -86,12 +89,12 @@ export const Bio = {
           image: require('../images/sqlserver.png'),
         },
         {
-          name: "Django",
-          image: require('../images/django.png'),
-        },
-        {
           name: "Flask",
           image: require('../images/flask.png'),
+        },
+        {
+          name: "Django",
+          image: require('../images/django.png'),
         },
       ],
     },
