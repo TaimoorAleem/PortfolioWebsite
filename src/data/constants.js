@@ -206,6 +206,23 @@ export const Bio = {
   export const projects = [
     {
       id: 0,
+      title: "Buddy Finder",
+      date: "19th Jan - 20th Jan 2024",
+      description:
+        "Hackathon winning project - won the Best UI award for this project. A Full-Stack Web Application that allows newcomers to find friends in their local area.",
+      image:
+        require('../images/logo.jpg'),
+      tags: [
+        "Next.js",
+        "TailwindCSS",
+        "Java",
+        "Spring Boot",
+      ],
+      category: "web",
+      link: "https://devpost.com/software/buddyfinder-c0rak1"
+    },
+    {
+      id: 1,
       title: "Rihla Travels",
       date: "Sept 2023 - Dec 2023",
       description:
@@ -223,7 +240,7 @@ export const Bio = {
       link: "https://devpost.com/software/rihlatravels"
     },
     {
-      id: 1,
+      id: 2,
       title: "Sheridan Works Out",
       date: "May 2022 - Aug 2022",
       description:
@@ -239,7 +256,7 @@ export const Bio = {
       link: "https://devpost.com/software/sheridan-works-out"
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio Website",
       date: "Dec 2023 - Jan 2024",
       description:
@@ -256,7 +273,7 @@ export const Bio = {
       link: "https://taimooraleem.com"
     },
     {
-      id: 3,
+      id: 4,
       title: "Data Analysis Research Paper",
       date: "Jan 2023 - Apr 2023",
       description:
@@ -271,19 +288,17 @@ export const Bio = {
       link: "https://drive.google.com/file/d/1B_uxVeJ4oB1GEpyb966Zm8ljcAnjPM4J/view?usp=sharing"
     },
     {
-      id: 4,
-      title: "Social Media Website",
+      id: 5,
+      title: "DollarSense",
       date: "Dec 2023 - Present",
       description:
-        "A Full Stack MERN Social Media Web Application which allows users to create new posts, view posts of people they follow and like and comment on others' posts.",
+        "A finance tracking full-stack website offering budget tracking, spending predictions, and personalized advice to help users manage money effectively and achieve their financial goals.",
       image:
         require('../images/inprogress.jpg'),
       tags: [
-        "MongoDB",
-        "ExpressJS",
-        "ReactJS",
-        "NodeJS",
-        "MaterialUI",
+        "Python",
+        "Flask",
+        "Next.js",
       ],
       category: "web",
     },
