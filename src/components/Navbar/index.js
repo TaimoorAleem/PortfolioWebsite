@@ -313,7 +313,7 @@ const Navbar = () => {
                 display: 'flex',
                 alignItems: 'center',
               }}
-              href='https://github.com/TaimoorAleem'
+              href='https://www.linkedin.com/in/taimooraleem/'
               target='_blank'
             >
               <FaLinkedin style={{ fontSize: '24px' }} />
