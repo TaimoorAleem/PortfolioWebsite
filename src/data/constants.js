@@ -198,7 +198,7 @@ export const Bio = {
       id: 1,
       img: require('../images/pisjes.png'),      
       school: "Pakistan International School Jeddah English Section",
-      date: "Apr 2019 - Apr 2025",
+      date: "Sep 2018 - Apr 2020",
       degree: "A-levels (Equivalent to High School Diploma)",
     },
   ];
@@ -207,7 +207,7 @@ export const Bio = {
     {
       id: 0,
       title: "Buddy Finder",
-      date: "19th Jan - 20th Jan 2024",
+      date: "19th Jan - 21st Jan 2024",
       description:
         "Hackathon winning project - won the Best UI award for this project. A Full-Stack Web Application that allows newcomers to find friends in their local area.",
       image:
@@ -290,7 +290,7 @@ export const Bio = {
     {
       id: 5,
       title: "DollarSense",
-      date: "Dec 2023 - Present",
+      date: "Jan 2024 - Present",
       description:
         "A finance tracking full-stack website offering budget tracking, spending predictions, and personalized advice to help users manage money effectively and achieve their financial goals.",
       image:
