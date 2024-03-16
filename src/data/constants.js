@@ -202,6 +202,16 @@ export const Bio = {
       degree: "A-levels (Equivalent to High School Diploma)",
     },
   ];
+
+  export const experience = [
+    {
+      id: 0,
+      img: require('../images/hackademics.jpeg'),
+      position: "VP of Tech & Web Developer",
+      date: "Mar 2024 - Present",
+      company: "Sheridan Hackademics Club",
+    },
+  ];
   
   export const projects = [
     {
