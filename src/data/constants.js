@@ -166,22 +166,6 @@ export const Bio = {
           name: "Postman",
           image: require('../images/postman.png'),
         },
-        {
-          name: "VS Code",
-          image: require('../images/vscode.png'),
-        },
-        {
-          name: "Visual Studio",
-          image: require('../images/visualstudio.png'),
-        },
-        {
-          name: "IntelliJ IDEA",
-          image: require('../images/intellij.png'),
-        },
-        {
-          name: "CLion",
-          image: require('../images/clion.png'),
-        },
       ],
     },
   ];
