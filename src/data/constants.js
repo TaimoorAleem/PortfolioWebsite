@@ -267,7 +267,7 @@ export const Bio = {
       tags: [
         "Python",
         "Flask",
-        "Next.js",
+        "React.js",
       ],
       category: "web",
       link: "https://devpost.com/software/dollar-sense"
