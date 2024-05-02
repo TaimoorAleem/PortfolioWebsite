@@ -289,19 +289,4 @@ export const Bio = {
       category: "web",
       link: "https://taimooraleem.com"
     },
-    {
-      id: 5,
-      title: "Data Analysis Research Paper",
-      date: "Jan 2023 - Apr 2023",
-      description:
-        "A data analysis journal paper about an experiment conducted to statistically analyze whether the difference between the performance of two machine learning algorithms is significant or not.",
-      image:
-        require('../images/statisticalanalysis.JPG'),
-      tags: [
-        "Data Analysis",
-        "Statistics",
-      ],
-      category: "data science",
-      link: "https://drive.google.com/file/d/1B_uxVeJ4oB1GEpyb966Zm8ljcAnjPM4J/view?usp=sharing"
-    },
   ];

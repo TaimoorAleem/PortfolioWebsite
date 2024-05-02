@@ -110,12 +110,6 @@ const Projects = () => {
             :
             <ToggleButton value="mobile" onClick={() => setToggle('mobile')}>Mobile</ToggleButton>
           }
-          <Divider />
-          {toggle === 'data science' ?
-            <ToggleButton active value="data science" onClick={() => setToggle('data science')}>Data Science</ToggleButton>
-            :
-            <ToggleButton value="data science" onClick={() => setToggle('data science')}>Data Science</ToggleButton>
-          }
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === 'all' && projects
