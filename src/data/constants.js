@@ -193,7 +193,7 @@ export const Bio = {
       img: require('../images/skillsquirrel.jpg'),
       position: "Software Developer Intern",
       date: "May 2024 - Aug 2024",
-      company: "Skills Squirrel",
+      company: "Skill Squirrel",
     },
     {
       id: 1,
