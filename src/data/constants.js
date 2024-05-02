@@ -190,10 +190,17 @@ export const Bio = {
   export const experience = [
     {
       id: 0,
+      img: require('../images/skillsquirrel.jpg'),
+      position: "Software Developer Intern",
+      date: "May 2024 - Aug 2024",
+      company: "Skills Squirrel",
+    },
+    {
+      id: 1,
       img: require('../images/hackademics.jpeg'),
-      position: "VP of Tech & Web Developer",
+      position: "VP of Technology",
       date: "Mar 2024 - Present",
-      company: "Sheridan Hackademics Club",
+      company: "Sheridan Hackville",
     },
   ];
   
@@ -251,6 +258,22 @@ export const Bio = {
     },
     {
       id: 3,
+      title: "DollarSense",
+      date: "Jan 2024 - Apr 2024",
+      description:
+        "A full-stack website offering budget tracking and spending predictions using machine learning to help users manage money effectively and achieve their financial goals.",
+      image:
+        require('../images/dollarsense.JPG'),
+      tags: [
+        "Python",
+        "Flask",
+        "Next.js",
+      ],
+      category: "web",
+      link: "https://devpost.com/software/dollar-sense"
+    },
+    {
+      id: 4,
       title: "Portfolio Website",
       date: "Dec 2023 - Jan 2024",
       description:
@@ -267,7 +290,7 @@ export const Bio = {
       link: "https://taimooraleem.com"
     },
     {
-      id: 4,
+      id: 5,
       title: "Data Analysis Research Paper",
       date: "Jan 2023 - Apr 2023",
       description:
@@ -280,20 +303,5 @@ export const Bio = {
       ],
       category: "data science",
       link: "https://drive.google.com/file/d/1B_uxVeJ4oB1GEpyb966Zm8ljcAnjPM4J/view?usp=sharing"
-    },
-    {
-      id: 5,
-      title: "DollarSense",
-      date: "Jan 2024 - Present",
-      description:
-        "A finance tracking full-stack website offering budget tracking, spending predictions, and personalized advice to help users manage money effectively and achieve their financial goals.",
-      image:
-        require('../images/inprogress.jpg'),
-      tags: [
-        "Python",
-        "Flask",
-        "Next.js",
-      ],
-      category: "web",
     },
   ];
