@@ -4,7 +4,7 @@ export const Bio = {
       "Full Stack Developer.",
       "Software Engineer.",
       "Data Scientist.",
-      "Machine Learning Enthusiast.",
+      "Machine Learning Developer.",
     ],
     github: "https://github.com/taimooraleem",
     resume: "https://drive.google.com/file/d/1pgxFR1rY32CEkoX35_GT64rMzWPJ-PAK/view?usp=sharing",
@@ -224,10 +224,27 @@ export const Bio = {
     },
     {
       id: 1,
+      title: "FinShare",
+      date: "July 2024 - Aug 2024",
+      description:
+        "A comprehensive back-end Stock Market / Social Media application built using ASP.NET Core Web API that allows users to store and manage stocks, comment on stocks and add stocks in a portfolio.",
+      image:
+        require('../images/FinShare_APIs.JPG'),
+      tags: [
+        "ASP.NET Core",
+        "Web API",
+        "C#",
+        "SQL Server"
+      ],
+      category: "web",
+      link: "https://github.com/TaimoorAleem/FinShare"
+    },
+    {
+      id: 2,
       title: "Rihla Travels",
       date: "Sept 2023 - Dec 2023",
       description:
-        "A Full-Stack Travel Booking Web Application which allows users to create and manage flight, hotel, and car bookings.",
+        "A full-stack Travel Booking web application which allows users to create and manage flight, hotel, and car bookings.",
       image:
         require('../images/rihla.png'),
       tags: [
@@ -239,22 +256,6 @@ export const Bio = {
       ],
       category: "web",
       link: "https://devpost.com/software/rihlatravels"
-    },
-    {
-      id: 2,
-      title: "Sheridan Works Out",
-      date: "May 2022 - Aug 2022",
-      description:
-        "A Mobile Application which allows users to browse multiple workouts, track their daily calories, and view their progress over time using line charts.",
-      image:
-        require('../images/sheridanworksout.JPG'),
-      tags: [
-        ".NET",
-        "Xamarin.Forms",
-        "C#",
-      ],
-      category: "mobile",
-      link: "https://devpost.com/software/sheridan-works-out"
     },
     {
       id: 3,
@@ -274,6 +275,22 @@ export const Bio = {
     },
     {
       id: 4,
+      title: "Sheridan Works Out",
+      date: "May 2022 - Aug 2022",
+      description:
+        "A mobile application which allows users to browse multiple workouts, track their daily calories, and view their progress over time using line charts.",
+      image:
+        require('../images/sheridanworksout.JPG'),
+      tags: [
+        ".NET",
+        "Xamarin.Forms",
+        "C#",
+      ],
+      category: "mobile",
+      link: "https://devpost.com/software/sheridan-works-out"
+    },
+    {
+      id: 5,
       title: "Portfolio Website",
       date: "Dec 2023 - Jan 2024",
       description:
