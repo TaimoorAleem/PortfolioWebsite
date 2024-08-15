@@ -296,7 +296,7 @@ export const Bio = {
       description:
         "A personal portfolio website created using React JS and Material UI to showcase my skills and projects.",
       image:
-        require('../images/portfolio.JPG'),
+        require('../images/portfolio.gif'),
       tags: [
         "ReactJS",
         "NodeJS",
