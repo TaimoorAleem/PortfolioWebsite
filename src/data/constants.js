@@ -306,4 +306,23 @@ export const Bio = {
       category: "web",
       link: "https://taimooraleem.com"
     },
+    {
+      id: 6,
+      title: "AI Cricket Coach - Capstone Project (In-Progress)",
+      date: "Sep 2024 - Apr 2025",
+      description:
+        "A real-time customized feedback generation system that allows cricket players to upload videos of their practice sessions from the umpire's POV, analyzes the ball trajectory using Computer Vision and utilizes Machine Learning to recommend the most ideal shot for the batsman to play.",
+      image:
+        require('../images/aicricketcoach.JPG'),
+      tags: [
+        "Google Cloud",
+        "Python",
+        "OpenCV",
+        "TensorFlow",
+        "Flutter",
+        "Dart",
+      ],
+      category: "mobile",
+      link: "https://taimooraleem.com"
+    },
   ];
