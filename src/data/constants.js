@@ -255,7 +255,7 @@ export const Bio = {
         "SQL Server"
       ],
       category: "web",
-      link: "https://devpost.com/software/rihlatravels"
+      link: "https://github.com/TaimoorAleem/TravelBookingApp"
     },
     {
       id: 3,
@@ -271,7 +271,7 @@ export const Bio = {
         "React.js",
       ],
       category: "web",
-      link: "https://devpost.com/software/dollar-sense"
+      link: "https://github.com/TaimoorAleem/DollarSenseApp"
     },
     {
       id: 4,
@@ -287,7 +287,7 @@ export const Bio = {
         "C#",
       ],
       category: "mobile",
-      link: "https://devpost.com/software/sheridan-works-out"
+      link: ""
     },
     {
       id: 5,
@@ -304,7 +304,7 @@ export const Bio = {
         "CSS Styled Components",
       ],
       category: "web",
-      link: "https://taimooraleem.com"
+      link: ""
     },
     {
       id: 6,
