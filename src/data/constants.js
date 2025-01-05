@@ -1,10 +1,10 @@
 export const Bio = {
     name: "Taimoor Aleem",
     roles: [
-      "Full Stack Developer.",
-      "Software Engineer.",
+      "Software Developer.",
       "Data Scientist.",
       "Machine Learning Developer.",
+      "Cloud Architect."
     ],
     github: "https://github.com/taimooraleem",
     resume: "https://drive.google.com/file/d/1pgxFR1rY32CEkoX35_GT64rMzWPJ-PAK/view?usp=sharing",
@@ -92,10 +92,6 @@ export const Bio = {
           name: "Flask",
           image: require('../images/flask.png'),
         },
-        {
-          name: "Django",
-          image: require('../images/django.png'),
-        },
       ],
     },
     {
@@ -154,18 +150,6 @@ export const Bio = {
           name: "Figma",
           image: require('../images/figma.png'),
         },
-        {
-          name: "Slack",
-          image: require('../images/slack.png'),
-        },
-        {
-          name: "Jupyter",
-          image: require('../images/jupyter.png'),
-        },
-        {
-          name: "Postman",
-          image: require('../images/postman.png'),
-        },
       ],
     },
   ];
@@ -190,17 +174,24 @@ export const Bio = {
   export const experience = [
     {
       id: 0,
+      img: require('../images/dayforce.png'),
+      position: "Software Developer Intern",
+      date: "Jan 2025 - Dec 2025",
+      company: "Dayforce",
+    },
+    {
+      id: 1,
       img: require('../images/skillsquirrel.jpg'),
       position: "Software Developer Intern",
       date: "May 2024 - Aug 2024",
       company: "Skill Squirrel",
     },
     {
-      id: 1,
+      id: 2,
       img: require('../images/hackademics.jpeg'),
       position: "VP of Technology",
-      date: "Mar 2024 - Present",
-      company: "Sheridan Hackville",
+      date: "Mar 2024 - Jan 2025",
+      company: "Sheridan Hackville Club",
     },
   ];
   
