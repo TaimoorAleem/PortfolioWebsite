@@ -189,7 +189,7 @@ export const Bio = {
     {
       id: 2,
       img: require('../images/hackademics.jpeg'),
-      position: "VP of Technology",
+      position: "VP of Technology & Sponsorship Team Member",
       date: "Mar 2024 - Jan 2025",
       company: "Sheridan Hackville Club",
     },
